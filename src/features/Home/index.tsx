@@ -31,6 +31,7 @@ import HomeModeContent from './HomeModeContent';
 import HomePortrait from './HomePortrait';
 import InputArea from './InputArea';
 import PortraitBubble from './PortraitBubble';
+import QuickStartGuide from './QuickStartGuide';
 import {
   getHomePortraitOverlap,
   HOME_PORTRAIT_CARD_GAP,
@@ -487,6 +488,8 @@ const Home = memo(() => {
         data-testid={'home-main'}
         gap={mainGap}
       >
+        {/* Quick-start guide sits above the composer, at the top of the chat column. */}
+        <QuickStartGuide />
         <Flexbox className={styles.inputArea} gap={12}>
           <InputArea
             showNewModelShortcuts

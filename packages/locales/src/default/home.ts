@@ -180,6 +180,13 @@ export default {
   'project.create': 'New project',
   'project.deleteConfirm':
     "This project will be deleted and can't be recovered. Confirm to continue.",
+  'quickStart.steps.answer.desc': 'Press Enter and the AI replies',
+  'quickStart.steps.answer.title': 'Get the answer',
+  'quickStart.steps.model.desc': 'Choose a model at the bottom-left of the input',
+  'quickStart.steps.model.title': 'Pick an AI model',
+  'quickStart.steps.question.desc': 'Describe what you need in one sentence',
+  'quickStart.steps.question.title': 'Ask your question',
+  'quickStart.title': 'Quick start',
   'recommendations.heteroAgent.cta': 'Add Agent',
   'recommendations.heteroAgent.description':
     'Detected the {{name}} CLI on this device — add {{name}} agent to chat with it from LobeHub.',
