@@ -12,7 +12,7 @@ const router = createSPABrowserRouter(authRoutes);
 
 createSPARoot(document.getElementById('root')!).render(
   <BootErrorBoundary>
-    <NextThemeProvider>
+    <NextThemeProvider forcedTheme={'dark'}>
       <RouterProvider router={router} />
     </NextThemeProvider>
   </BootErrorBoundary>,

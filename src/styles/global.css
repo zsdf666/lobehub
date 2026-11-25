@@ -283,3 +283,35 @@ html.desktop[data-window-fullscreen] body {
     font-size: var(--lobe-density-page-title-font-size);
   }
 }
+
+/* =========================================================================
+ * LOCAL BRANDING OVERRIDE — whole app painted deep purple
+ * -------------------------------------------------------------------------
+ * The app is pinned to the dark theme (see `forcedTheme` in
+ * src/spa/entry.web.tsx / entry.auth.tsx) and the dark theme's greyscale
+ * surfaces are re-tinted purple here. Text, icons and controls keep the dark
+ * theme's light colours, so contrast stays readable.
+ *
+ * Surfaces:
+ *   bg-layout    page backdrop / gutters
+ *   bg-container cards, panels, sidebar surfaces
+ *   bg-elevated  popovers, dropdowns, modals
+ *   border       dividers
+ * `!important` is required because @lobehub/ui re-declares some of these per
+ * neutral-color scheme with a more specific selector.
+ *
+ * Tweak the shades with the four values below.
+ * ========================================================================= */
+html[data-theme='dark'] {
+  --lobe-color-bg-base: #2e1065 !important;
+  --lobe-color-bg-layout: #2e1065 !important;
+  --lobe-color-bg-container: #3a1678 !important;
+  --lobe-color-bg-container-secondary: #341370 !important;
+  --lobe-color-bg-elevated: #3a1678 !important;
+  --lobe-color-border: #4b2494 !important;
+  --lobe-color-border-secondary: #3d1a7d !important;
+}
+
+html[data-theme='dark'] body {
+  background-color: #2e1065 !important;
+}
